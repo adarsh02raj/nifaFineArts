@@ -4,6 +4,9 @@ import Header from "./component/Header";
 import Carousels from "./component/Carousels";
 import Updates from "./component/Updates";
 import Welcome from "./component/Welcome";
+import OnlineClass from "./component/OnlineClass";
+import Cources from "./component/Cources";
+import StudentWork from "./component/StudentWork";
 
 const AppLayput = () => {
     return (
@@ -12,6 +15,9 @@ const AppLayput = () => {
             <Carousels />
             <Updates />
             <Welcome />
+            <OnlineClass />
+            <Cources />
+            <StudentWork />
         </div>
     )
 }

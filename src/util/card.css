@@ -1,0 +1,63 @@
+@media screen and (min-width: 600px){
+    .cources{
+        margin-left: 10vw;
+    }
+    .cards{
+        max-width: 250px;
+        min-height: 350px;
+    }
+}
+@media screen and (min-width: 900px){
+    .courcesCard{
+        max-height: 275px;
+    }
+    .cources{
+        margin-left: 15vw;
+    }
+    .cards{
+        max-width: 250px;
+        min-height: 350px;
+    }
+}
+/*main*/
+
+.cources-container>h1{
+    text-align: center;
+    margin: 5vh;
+}
+.courcesCard{
+    border-radius: 5px;
+    max-width: 350px;
+    min-height: 350px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cards>img{
+    width: 98%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.cards>p{
+    margin: 15px 2vh -10px;
+}
+.cources{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-bottom: 5vh;
+}
+.cources-container{
+    background: url('../../assets/bgc/artboard2.png');
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+    .cources{
+        margin-left: 5vw;
+    }
+}

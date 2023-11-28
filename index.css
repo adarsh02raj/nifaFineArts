@@ -1,2 +1,76 @@
-*{padding: 0;
+/* *{padding: 0;
 margin: 0;}
+.studentWork{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10vw;
+}
+.imagecard{
+    height: 40vh;
+    flex-grow: 1;
+    margin: 1vmin;
+    list-style: none;
+}
+.imagecard>img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    border-radius: 1vmin;
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .studentWork{
+        width: 100%;
+        position: relative;
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 1vw;
+    }
+    .imagecard{
+        max-height: 30vh;
+        flex-grow: 1;
+        margin: 1vmin;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imagecard>img{
+        max-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+        border-radius: 1vmin;
+    }
+} */
+
+/* CSS for the ImageCard component */
+.imagecard {
+    width: calc(33.33% - 4px); /* Adjust the width of each image card */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .imagecard img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Responsive layout for ImageCard container */
+  .studentWork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust alignment as needed */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .imagecard {
+      width: calc(50% - 4px); /* Two images per row on smaller screens */
+    }
+  }
+  
