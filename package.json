@@ -1,0 +1,32 @@
+{
+  "name": "nifafinearts",
+  "version": "1.0.0",
+  "description": "clone",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adarsh02raj/nifaFineArts.git"
+  },
+  "keywords": [
+    "Nifa",
+    "NifaFineArts"
+  ],
+  "author": "Adarsh Raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adarsh02raj/nifaFineArts/issues"
+  },
+  "homepage": "https://github.com/adarsh02raj/nifaFineArts#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
