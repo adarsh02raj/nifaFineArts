@@ -1,0 +1,144 @@
+.heading {
+    width: 100vw;
+    background: linear-gradient(90deg, #812868 0%, #f954a4 100%);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 1vh 0;
+}
+.heading-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.right-left>ul,
+.right-right>ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.right-left>ul>li,
+.right-right-mail{
+    display: flex;
+    gap: 5px;
+}
+li {
+    list-style-type: none;
+}
+
+.right-right>ul>li>a,
+.right-left>ul>li {
+    color: white;
+    align-items: center;
+}
+.right-left,
+.right-right{
+    display: flex;
+    align-items: center;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+.updates{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 15px;
+}
+.update-heading {
+    position: sticky;
+    top: 0;
+    background-color: #fff; 
+    z-index: 1;
+}
+.update-messages {
+    color: red;
+    width: 100%;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+} 
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media only screen and (min-width: 750px) {
+    .heading {
+        width: 100vw;
+        background: linear-gradient(90deg, #812868 0%, #f954a4 100%);
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1vh 0;
+        font-size: 1.1rem;
+    }
+    .heading-left{
+        margin-left: 5vw;
+    }
+    .heading-right{
+        margin-right: 5vw;
+    }
+    li{
+        display: flex;
+        align-items: center;
+
+    }
+    .right-left>ul>li{
+        display: flex;
+        gap: 5px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #menu{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .nav-left{
+        margin-left: 5vw;
+    }
+    .nav-right{
+        margin-right: 5vw;
+    }
+    #nav-logo{
+        height: 60px;
+    }
+    .updates {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-left: 7vw;
+        width: 85vw;
+        overflow: hidden;
+    }
+    
+    .update-heading {
+        position: sticky;
+        top: 0;
+        background-color: #fff; 
+        z-index: 1;
+        padding-right: 50px;
+    }
+    
+    .update-messages {
+        color: red;
+        margin-left: 5vw;
+        width: 50%;
+        white-space: nowrap;
+        animation: marquee 15s linear infinite;
+    }    
+    
+}
