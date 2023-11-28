@@ -7,6 +7,7 @@ import Welcome from "./component/Welcome";
 import OnlineClass from "./component/OnlineClass";
 import Cources from "./component/Cources";
 import StudentWork from "./component/StudentWork";
+import Footer from "./component/Footer";
 
 const AppLayput = () => {
     return (
@@ -18,6 +19,7 @@ const AppLayput = () => {
             <OnlineClass />
             <Cources />
             <StudentWork />
+            <Footer />
         </div>
     )
 }

@@ -1,0 +1,82 @@
+.footer{
+    background:  url(../../assets/bgc/fotbg2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 10vw;
+}
+h4{
+    margin-bottom: 15px;
+}
+.lower{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 10vw;
+}
+.left{
+    display: grid;
+    gap: 10px;
+}
+.social{
+    display: flex;
+    gap: 20px;
+}
+.fb{
+    color: blue;
+}
+.tw{
+    color: skyblue;
+}
+.in,
+.yt{
+    color: red;
+}
+.fb,.in,.tw,.yt{
+    height: 50px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+.right>div{
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .upper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    .popular{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .locations{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 105px;
+    }
+    .lower{
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        display: flex;
+        align-items: baseline;
+    }
+    .right>p{
+        font-size: 12px;
+    }
+}

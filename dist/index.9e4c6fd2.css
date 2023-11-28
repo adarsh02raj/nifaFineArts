@@ -3,31 +3,18 @@
   padding: 0;
 }
 
-.imagecard {
-  box-sizing: border-box;
-  width: calc(33.33% - 4px);
-  margin: 0;
-  padding: 0;
-}
-
-.imagecard img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .studentWork {
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  width: 850px;
   display: flex;
 }
 
-@media screen and (width <= 768px) {
-  .imagecard {
-    width: calc(50% - 4px);
-  }
+.imagecard > img {
+  object-fit: fill;
+  width: auto;
+  height: 400px;
+  padding: 8px;
+  display: block;
 }
 
 .heading {
@@ -583,6 +570,42 @@ li {
   opacity: 1;
 }
 
+@media screen and (width <= 600px) {
+  .updates {
+    flex-direction: column;
+    gap: 10px;
+    width: 50vw;
+    margin: 15px;
+    display: flex;
+  }
+
+  .update-heading {
+    z-index: 1;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+  }
+
+  .update-messages {
+    color: red;
+    white-space: nowrap;
+    width: auto;
+    animation: 10s linear infinite marquee;
+    display: block;
+    overflow: hidden;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
 @media screen and (width >= 600px) {
   .cources {
     margin-left: 10vw;
@@ -654,6 +677,320 @@ li {
 @media screen and (width <= 767px) {
   .cources {
     margin-left: 5vw;
+  }
+}
+
+.studentWork {
+  justify-content: center;
+  gap: 10px;
+  width: 100vw;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.row1 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.row1 > img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 350px;
+  display: block;
+}
+
+.row2 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.row2 > img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 1050px;
+  height: 350px;
+  display: block;
+}
+
+.row3 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.row3 > img {
+  border-radius: 10px;
+  width: 100%;
+  height: 350px;
+  display: block;
+}
+
+.row4 {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.row4 > img {
+  border-radius: 10px;
+  max-width: 30%;
+  height: 350px;
+  display: block;
+}
+
+.row5 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.row5 > img {
+  max-width: auto;
+  border-radius: 10px;
+  height: 285px;
+  display: block;
+}
+
+.row6 {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.row6 > img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 280px;
+  display: block;
+}
+
+.row7 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.row7 > img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 285px;
+  display: block;
+}
+
+.row8 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.row8 > img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 1050px;
+  height: 380px;
+  display: block;
+}
+
+@media screen and (width <= 600px) {
+  .row1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+  .row1 > img {
+    max-width: 100%;
+    height: 230px;
+  }
+
+  .row2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+  .row2 > img {
+    max-width: 80%;
+    height: 150px;
+  }
+
+  .row3 {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+  .row3 > img {
+    max-width: 80%;
+    height: 150px;
+  }
+
+  .row4 {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+  .row4 > img {
+    max-width: 100%;
+    height: 150px;
+  }
+
+  .row5 {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+  .row5 > img {
+    max-width: 100%;
+    height: 170px;
+  }
+
+  .row6 {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+  .row6 > img {
+    max-width: 100%;
+    height: 140px;
+  }
+
+  .row7 {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+  .row7 > img {
+    max-width: 100%;
+    height: 150px;
+  }
+
+  .row8 {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+  .row8 > img {
+    max-width: 80%;
+    height: 120px;
+  }
+}
+
+.footer {
+  background: url("fotbg2.ca4bd6db.jpeg") 0 0 / cover no-repeat;
+}
+
+.upper {
+  justify-content: space-between;
+  padding: 5vh 10vw;
+  display: flex;
+}
+
+h4 {
+  margin-bottom: 15px;
+}
+
+.lower {
+  justify-content: space-between;
+  padding: 5vh 10vw;
+  display: flex;
+}
+
+.left {
+  gap: 10px;
+  display: grid;
+}
+
+.social {
+  gap: 20px;
+  display: flex;
+}
+
+.fb {
+  color: #00f;
+}
+
+.tw {
+  color: #87ceeb;
+}
+
+.in, .yt {
+  color: red;
+}
+
+.fb, .in, .tw, .yt {
+  height: 50px;
+}
+
+.right {
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  display: flex;
+}
+
+.right > div {
+  gap: 10px;
+  display: flex;
+}
+
+@media screen and (width <= 700px) {
+  .upper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 12px;
+    display: flex;
+  }
+
+  .popular {
+    flex-flow: column wrap;
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .locations {
+    flex-flow: column wrap;
+    max-width: 105px;
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .lower {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .right {
+    align-items: baseline;
+    display: flex;
+  }
+
+  .right > p {
+    font-size: 12px;
   }
 }
 
